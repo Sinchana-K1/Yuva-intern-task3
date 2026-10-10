@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>   
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>College Fest 2026 | Sinchana K</title>   
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>  
+    <header>        
+      <h1>College Fest 2026</h1>      
+      <nav>          
+        <a href="#">Home</a>            
+        <a href="#">Events</a>            
+        <a href="#">Contact</a>      
+      </nav>   
+    </header>   
+    <section class="hero">       
+      <h2>Welcome to the Biggest College Fest</h2>        
+      <p>12, 13, 14 March 2026 — Music, Dance, Coding, Gaming</p>       
+      <button id="openModalBtn">Register Now</button>   
+    </section>   
+    <section class="filter-container">        
+      <button class="filter-btn active" data-category="all">All Events</button>        
+      <button class="filter-btn" data-category="cultural">Cultural</button>      
+      <button class="filter-btn" data-category="technical">Technical</button>    
+    </section>   
+    <section class="events" id="eventsGrid">        
+      <div class="card" data-type="cultural">🎵
+        <h3>Music</h3></div>        
+      <div class="card" data-type="cultural">💃
+        <h3>Dance</h3></div>        
+      <div class="card" data-type="technical">💻 
+        <h3>Coding</h3></div>        
+      <div class="card" data-type="technical">🎮 
+        <h3>Gaming</h3></div>   
+    </section>    
+    <div class="modal" id="regModal">        
+      <div class="modal-content">          
+        <span class="close-btn" id="closeModalBtn">&times;
+        </span>        
+        <h3>Event Registration</h3>            
+        <form id="regForm" novalidate>                
+          <div class="form-group">                   
+            <label for="fullName">Full Name:</label>                    
+            <input type="text" id="fullName" placeholder="Enter your full name">                    
+            <small class="error-msg" id="nameError"></small>                
+          </div>              
+          <div class="form-group">                  
+            <label for="email">Email Address:</label>                    
+            <input type="email" id="email" placeholder="Enter your email address">                   
+            <small class="error-msg" id="emailError"></small>               
+          </div>              
+          <button type="submit" class="submit-btn">Submit Registration</button>           
+        </form>        
+      </div>    
+    </div>    
+    <footer>       
+      <p>© 2026 Sinchana K | BCA Final Year</p>   
+    </footer>    
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
